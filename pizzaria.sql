@@ -1,0 +1,20 @@
+CREATE DATABASE pizzaria;
+USE pizzaria;
+CREATE TABLE clientes(
+id INT PRIMARY KEY AUTO_INCREMENT, 
+ nome VARCHAR(35) NOT NULL, 
+ telefone VARCHAR(20) NOT NULL,
+ endereco VARCHAR(100)
+ );
+ 
+ CREATE TABLE entregador(
+id INT PRIMARY KEY AUTO_INCREMENT, 
+ nome VARCHAR(35) NOT NULL, 
+ placa_moto VARCHAR(20) NOT NULL
+ );
+ 
+ CREATE TABLE pedido(
+id INT PRIMARY KEY AUTO_INCREMENT, 
+ data_hora VARCHAR(35) NOT NULL, 
+ valor_total VARCHAR(20) NOT NULL
+ );
